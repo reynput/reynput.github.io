@@ -171,14 +171,18 @@
 
 							<p>Feel free to contact me for any questions</p>
 
-							<form method="post" action="http://formspree.io/niels@vandenput.com">
+							<form method="post"   action="http://formspree.io/niels@vandenput.com">
 								<div class="row">
-									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Your name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="_replyto" placeholder="Your e-mail" /></div>
 									<div class="12u$">
 										<textarea name="message" placeholder="Message"></textarea>
+                                        <input type="text" name="_gotcha" style="display:none" />
 									</div>
 									<div class="12u$">
+                                        <input type="hidden" name="_subject" value="Website contact" />
+                                        <input type="hidden" name="_next" value="http://niels.vandenput.com">
+                                        <input type="text" name="_gotcha" style="display:none" />
 										<input type="submit" value="Send Message" />
 									</div>
 								</div>
